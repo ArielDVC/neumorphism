@@ -1,6 +1,6 @@
 # Plantilla Administrativa de Neumorfismo
 
-![Plantilla Neumorfismo]([https://raw.githubusercontent.com/ArielDVC/neumorphism/main/assets/img/Banner.jpg])
+![Plantilla Neumorfismo](https://raw.githubusercontent.com/ArielDVC/neumorphism/main/assets/img/Banner.jpg)
 
 Esta es una plantilla administrativa web de neumorfismo que ofrece una interfaz de usuario moderna y atractiva para administrar y gestionar datos. La plantilla utiliza el estilo de diseño de neumorfismo, que simula elementos que sobresalen o están hundidos en la superficie, creando un efecto tridimensional.
 
