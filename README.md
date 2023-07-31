@@ -44,7 +44,7 @@ Esta plantilla fue creada por Ariel Douglas Villca Calle (https://github.com/Ari
 
 ## Capturas de Pantalla
 
-![Captura 1]([https://tinbolivia.net/Github/neumorphism/Banner.jpg])
+![Captura 1](https://raw.githubusercontent.com/ArielDVC/neumorphism/main/assets/img/Banner.jpg)
 
 ## Contacto
 
