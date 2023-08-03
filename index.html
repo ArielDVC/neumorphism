@@ -7,10 +7,17 @@
     <link rel='stylesheet' href='./assets/css/style.css'>
     <link rel='stylesheet' href='./assets/css/tailwind.css'>
     <link rel='stylesheet' href='./assets/libraries/fontawesome-free-6.4.0-web/css/all.min.css'>
+    <!--
+        sm  -> 640px
+        md  -> 768px
+        lg  -> 1024px
+        xl  -> 1280px
+        2xl -> 1536px
+    -->
 </head>
 <body class='bg-gray-200'>
     <!-- SIDEBAR -->
-    <div class='fixed w-72 h-screen p-3'>
+    <div class='fixed w-72 h-screen p-3'><!--hidden-->
         <div class='w-full h-full rounded-2xl div-shadow'>
             <div class='py-2.5'>
                 <img src='./assets/img/avatar.png' class='block mx-auto rounded-full w-24 h-24 border-4 div-shadow'>
@@ -46,7 +53,7 @@
         </div>
     </div>
     <!-- SIDENAV -->
-    <div class='ml-72 p-3 w-[calc(100% - 288px)]'>
+    <div class='p-3 ml-72 w-[calc(100% - 288px)]'>
         <div class='h-12 rounded-2xl div-shadow'>
             <a href='#' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
                 <i class='w-6 fa-solid fa-bars'></i>
@@ -64,18 +71,18 @@
                 <a href='#' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
                     <i class='w-6 fa-solid fa-cog'></i>
                 </a>
-                <!-- <nav class='absolute z-20 right-[20px] top-[70px] w-[270px] p-2 rounded-2xl bg-cover bg-center bg-gray-200 border-4 border-solid border-gray-700 form-shadow'>
+                <!-- <nav class='absolute z-20 right-[20px] top-[70px] w-[270px] p-2 rounded-2xl bg-cover bg-center bg-gray-200 border-4 border-solid border-gray-700 border-2 border-solid border-gray-200 form-shadow'>
                     <div class='w-full py-1'>
                         <img src='./assets/img/avatar.png' class='block mx-auto rounded-full w-24 h-24 border-4 div-shadow'>
                     </div>
                     <h5 class='mt-1 text-center text-gray-700 text-base'>Juan Perez Gomez</h5>
                     <h5 class='mt-1 text-center text-gray-700 font-medium text-sm'>Administrador</h5>
                     <div class='my-2'>
-                        <button class='float-left mx-1 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-indigo-500 button-shadow'>
+                        <button class='float-left mx-1 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-indigo-500 border-2 border-solid border-gray-200 button-shadow'>
                             <i class='w-5 fa-solid fa-user'></i>
                             Perfil
                         </button>
-                        <button class='float-right mx-1 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-red-500 button-shadow'>
+                        <button class='float-right mx-1 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-red-500 border-2 border-solid border-gray-200 button-shadow'>
                             <i class='w-5 fa-solid fa-right-from-bracket'></i>
                             Salir
                         </button>
@@ -88,7 +95,7 @@
         </div>
     </div>
     <!-- CONTENT -->
-    <div class='ml-72 p-3 w-[calc(100% - 288px)]'>
+    <div class='p-3 ml-72 w-[calc(100% - 288px)]'>
         <div class='rounded-2xl p-3 div-shadow'>
             <!-- BREADCRUMB -->
             <div class='clear-both relative w-full h-7'>
@@ -118,20 +125,13 @@
                         </li>
                     </ol>
                 </nav>
-                <button class='absolute right-0 -top-0.5 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-indigo-500 button-shadow'>
+                <button class='absolute right-0 -top-0.5 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-indigo-500 border-2 border-solid border-gray-200 button-shadow'>
                     <i class='w-5 fa-solid fa-plus'></i>
                     Registrar
                 </button>
             </div>
-            <!-- FORMULARIO -->
-            <form class='clear-both mx-auto mt-2.5 w-full max-w-sm rounded-lg p-3 form-shadow'>
-                <!--
-                    sm  -> 640px
-                    md  -> 768px
-                    lg  -> 1024px
-                    xl  -> 1280px
-                    2xl -> 1536px
-                -->
+            <!-- FORM -->
+            <form class='clear-both mx-auto mt-2.5 w-full max-w-sm rounded-lg p-3 border-2 border-solid border-gray-200 form-shadow'>
                 <h4 class='text-xl font-medium text-gray-700'>Registrar Usuario</h4>
                 <div class='grid gap-1 grid-cols-12 mt-2'>
                     <div class='col-span-12'>
@@ -147,18 +147,18 @@
                         <input type='text' class='w-full outline-none rounded-lg py-1 px-3 bg-gray-200 text-gray-700 input-shadow'>
                     </div>
                     <div class='col-span-12 mt-2 flex justify-end'>
-                        <button class='mx-1 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-indigo-500 button-shadow'>
+                        <button class='mx-1 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-indigo-500 border-2 border-solid border-gray-200 button-shadow'>
                             <i class='w-5 fa-solid fa-plus'></i>
                             Registrar
                         </button>
-                        <button class='mx-1 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-red-500 button-shadow'>
+                        <button class='mx-1 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-red-500 border-2 border-solid border-gray-200 button-shadow'>
                             <i class='w-5 fa-solid fa-xmark'></i>
                             Cancelar
                         </button>
                     </div>
                 </div>
             </form>
-            <div class='clear-both mt-2.5 w-full rounded-lg p-3 overflow-x-auto form-shadow'>
+            <div class='clear-both mt-2.5 w-full rounded-lg p-3 overflow-x-auto border-2 border-solid border-gray-200 form-shadow'>
                 <table class='w-full border-collapse text-center text-sm text-gray-800'>
                     <thead>
                         <tr class='border-solid border-gray-700 border-b-2'>
@@ -176,10 +176,10 @@
                             <td class='p-2'>Administrador</td>
                             <td class='p-2 font-bold text-green-600'>Activo</td>
                             <td class='p-2'>
-                                <button class='w-8 h-8 mx-0.5 text-sky-500 rounded button-shadow-sm'>
+                                <button class='w-8 h-8 mx-0.5 text-sky-500 rounded transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                                     <i class='w-5 fa-solid fa-edit'></i>
                                 </button>
-                                <button class='w-8 h-8 mx-0.5 text-red-500 rounded button-shadow-sm'>
+                                <button class='w-8 h-8 mx-0.5 text-red-500 rounded transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                                     <i class='w-5 fa-solid fa-trash'></i>
                                 </button>
                             </td>
@@ -190,10 +190,10 @@
                             <td class='p-2'>Personal</td>
                             <td class='p-2 font-bold text-red-600'>Inactivo</td>
                             <td class='p-2'>
-                                <button class='w-8 h-8 mx-0.5 text-sky-500 rounded button-shadow-sm'>
+                                <button class='w-8 h-8 mx-0.5 text-sky-500 rounded transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                                     <i class='w-5 fa-solid fa-edit'></i>
                                 </button>
-                                <button class='w-8 h-8 mx-0.5 text-red-500 rounded button-shadow-sm'>
+                                <button class='w-8 h-8 mx-0.5 text-red-500 rounded transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                                     <i class='w-5 fa-solid fa-trash'></i>
                                 </button>
                             </td>
@@ -211,27 +211,68 @@
                 </table>
             </div>
             <div class='mt-4 mb-2 flex justify-end'>
-                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 button-shadow-sm'>
+                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                     <i class='w-5 fa-solid fa-angle-left'></i>
                 </a>
-                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 button-shadow-sm'>
+                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                     1
                 </a>
-                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 button-shadow-sm'>
+                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                     2
                 </a>
-                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 button-shadow-sm'>
+                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                     3
                 </a>
-                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 button-shadow-sm'>
+                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                     4
                 </a>
-                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 button-shadow-sm'>
+                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                     5
                 </a>
-                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 button-shadow-sm'>
+                <a href='#' class='w-8 h-7 mx-1 rounded inline-block font-bold text-center text-gray-600 hover:text-indigo-500 transition duration-300 border-2 border-solid border-gray-200 button-shadow-sm'>
                     <i class='w-5 fa-solid fa-angle-right'></i>
                 </a>
+            </div>
+            <!-- PROFILE -->
+            <div class='grid gap-3 grid-cols-12'>
+                <div class='col-span-12 sm:col-span-4'>
+                    <div class='rounded-lg p-3 border-2 border-solid border-gray-200 form-shadow'>
+                        <div class='py-2.5'>
+                            <img src='./assets/img/avatar.png' class='block mx-auto rounded-full w-24 h-24 border-4 div-shadow'>
+                        </div>
+                        <h5 class='mt-1 text-center text-gray-700'>Juan Perez Gomez</h5>
+                        <h5 class='mt-1 text-center text-gray-700 font-medium text-sm'>Administrador</h5>
+                    </div>
+                </div>
+                <div class='col-span-12 sm:col-span-8'>
+                    <div class='rounded-lg p-3 border-2 border-solid border-gray-200 form-shadow'>
+                        <h4 class='text-xl font-medium text-gray-700'>Actualizar Datos</h4>
+                        <div class='grid gap-1 grid-cols-12 mt-2'>
+                            <div class='col-span-12'>
+                                <label for='' class='text-sm font-medium text-gray-700'>Nombre <span>*</span></label>
+                                <input type='text' class='w-full outline-none rounded-lg py-1 px-3 bg-gray-200 text-gray-700 input-shadow'>
+                            </div>
+                            <div class='col-span-12 md:col-span-8'>
+                                <label for='' class='text-sm font-medium text-gray-700'>Ci <span>*</span></label>
+                                <input type='text' class='w-full outline-none rounded-lg py-1 px-3 bg-gray-200 text-gray-700 input-shadow'>
+                            </div>
+                            <div class='col-span-12 md:col-span-4'>
+                                <label for='' class='text-sm font-medium text-gray-700'>Complemento <span>*</span></label>
+                                <input type='text' class='w-full outline-none rounded-lg py-1 px-3 bg-gray-200 text-gray-700 input-shadow'>
+                            </div>
+                            <div class='col-span-12 mt-2 flex justify-end'>
+                                <button class='mx-1 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-indigo-500 border-2 border-solid border-gray-200 button-shadow'>
+                                    <i class='w-5 fa-solid fa-plus'></i>
+                                    Registrar
+                                </button>
+                                <button class='mx-1 w-28 h-8 rounded-lg items-center justify-center text-sm font-medium text-gray-700 py-1 px-2 transition duration-300 hover:text-red-500 border-2 border-solid border-gray-200 button-shadow'>
+                                    <i class='w-5 fa-solid fa-xmark'></i>
+                                    Cancelar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

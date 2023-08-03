@@ -8,8 +8,8 @@
                 -5px -5px 10px var(--color2);
 }
 .form-shadow{
-    border: 2px solid var(--color0);
-    box-shadow: 2px 2px 5px var(--color1), -2px -2px 5px var(--color2);
+    box-shadow: 2px 2px 5px var(--color1),
+                -2px -2px 5px var(--color2);
 }
 .input-shadow{
     box-shadow: inset 2px 2px 2px var(--color1),
@@ -20,18 +20,20 @@
                 -5px -5px 5px var(--color2);
 }
 .button-shadow:hover{
-    border: 2px solid var(--color0);
-    box-shadow: 2px 2px 5px var(--color1), -2px -2px 5px var(--color2),
-            inset 2px 2px 5px var(--color1), inset 2px 2px 5px var(--color2);
+    box-shadow: 2px 2px 5px var(--color1),
+                -2px -2px 5px var(--color2),
+                inset 2px 2px 5px var(--color1),
+                inset 2px 2px 5px var(--color2);
 }
 .button-shadow-sm{
     box-shadow: 3px 3px 3px var(--color1),
                 -3px -3px 3px var(--color2);
 }
 .button-shadow-sm:hover{
-    border: 2px solid var(--color0);
-    box-shadow: 2px 2px 3px var(--color1), -2px -2px 3px var(--color2),
-            inset 2px 2px 3px var(--color1), inset 2px 2px 3px var(--color2);
+    box-shadow: 2px 2px 3px var(--color1),
+                -2px -2px 3px var(--color2),
+                inset 2px 2px 3px var(--color1),
+                inset 2px 2px 3px var(--color2);
 }
 .option-shadow{
     box-shadow: inset 4px 4px 4px var(--color1),
