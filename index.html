@@ -17,8 +17,9 @@
 </head>
 <body class='bg-gray-200'>
     <!-- SIDEBAR -->
-    <div class='fixed w-72 h-screen p-3'><!--hidden-->
-        <div class='w-full h-full rounded-2xl div-shadow'>
+    <div class='z-30 fixed w-full h-full z-30 bg-gray-950 bg-opacity-60 background'></div>
+    <div class='z-40 fixed h-screen p-3 sidebar'>
+        <div class='w-full h-full rounded-2xl bg-gray-200'>
             <div class='py-2.5'>
                 <img src='./assets/img/avatar.png' class='block mx-auto rounded-full w-24 h-24 border-4 div-shadow'>
             </div>
@@ -53,25 +54,25 @@
         </div>
     </div>
     <!-- SIDENAV -->
-    <div class='p-3 ml-72 w-[calc(100% - 288px)]'>
+    <div class='p-3 w-full sidenav width'>
         <div class='h-12 rounded-2xl div-shadow'>
-            <a href='#' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
+            <a href='javascript:changeMenu()' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
                 <i class='w-6 fa-solid fa-bars'></i>
             </a>
             <div class='float-right'>
                 <a href='#' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
                     <i class='w-6 fa-solid fa-search'></i>
                 </a>
-                <a href='#' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
+                <a href='javascript:fullScreen()' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
                     <i class='w-6 fa-solid fa-expand'></i>
                 </a>
                 <a href='#' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
                     <i class='w-6 fa-solid fa-bell'></i>
                 </a>
-                <a href='#' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
+                <a href='javascript:dropDown()' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
                     <i class='w-6 fa-solid fa-cog'></i>
                 </a>
-                <!-- <nav class='absolute z-20 right-[20px] top-[70px] w-[270px] p-2 rounded-2xl bg-cover bg-center bg-gray-200 border-4 border-solid border-gray-700 border-2 border-solid border-gray-200 form-shadow'>
+                <nav id='dropDown' class='absolute z-20 right-[20px] top-[70px] w-[270px] p-2 rounded-2xl bg-gray-200 border-2 border-solid border-gray-200 form-shadow hidden'>
                     <div class='w-full py-1'>
                         <img src='./assets/img/avatar.png' class='block mx-auto rounded-full w-24 h-24 border-4 div-shadow'>
                     </div>
@@ -87,7 +88,7 @@
                             Salir
                         </button>
                     </div>
-                </nav> -->
+                </nav>
                 <a href='#' class='p-2.5 inline-block text-center text-xl text-gray-700 transition duration-300 hover:text-indigo-500'>
                     <i class='w-6 fa-solid fa-circle-question'></i>
                 </a>
@@ -95,7 +96,7 @@
         </div>
     </div>
     <!-- CONTENT -->
-    <div class='p-3 ml-72 w-[calc(100% - 288px)]'>
+    <div class='p-3 w-full content width'>
         <div class='rounded-2xl p-3 div-shadow'>
             <!-- BREADCRUMB -->
             <div class='clear-both relative w-full h-7'>
@@ -276,5 +277,7 @@
             </div>
         </div>
     </div>
+    <script src='./assets/js/jquery-3.7.0.min.js'></script>
+    <script src='./assets/js/app.js'></script>
 </body>
 </html>

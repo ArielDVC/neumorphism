@@ -3,6 +3,9 @@
     --color1  : #6b7280;
     --color2  : #ffffff;
 }
+.width{
+    width: calc(100% - 288px);
+}
 .div-shadow{
     box-shadow: 5px 5px 10px var(--color1),
                 -5px -5px 10px var(--color2);
